@@ -7,11 +7,8 @@ extents = Vector2( 32, 8 )
 
 [node name="CoyoteJump" instance=ExtResource( 1 )]
 
-[node name="KinematicBody2D" parent="." index="0"]
-coyote_jump = true
-
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
-position = Vector2( 80, 72 )
+position = Vector2( 8, 72 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -29,7 +26,7 @@ __meta__ = {
 }
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." index="2"]
-position = Vector2( 232, 112 )
+position = Vector2( 160, 112 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -39,14 +36,15 @@ shape = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D2/CollisionShape2D" index="0"]
 margin_left = -32.0
-margin_top = -16.0
+margin_top = -8.0
 margin_right = 32.0
+margin_bottom = 8.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." index="3"]
-position = Vector2( -56, 184 )
+position = Vector2( -128, 184 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -62,3 +60,6 @@ margin_bottom = 8.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="KinematicBody2D" parent="." index="4"]
+coyote_jump = true
