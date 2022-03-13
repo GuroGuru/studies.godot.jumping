@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/GotoScene.gd" type="Script" id=1]
+
+[node name="Main" type="Node2D"]
+
+[node name="GotoBasicJump" type="Button" parent="."]
+margin_left = 24.0
+margin_top = 16.0
+margin_right = 120.0
+margin_bottom = 37.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "basic jump"
+align = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_path = "res://levels/BasicJump.tscn"
+
+[node name="GotoDoubleJump" type="Button" parent="."]
+margin_left = 24.0
+margin_top = 40.0
+margin_right = 120.0
+margin_bottom = 61.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "double jump"
+align = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_path = "res://levels/DoubleJump.tscn"
+
+[node name="GotoWallJump" type="Button" parent="."]
+margin_left = 24.0
+margin_top = 64.0
+margin_right = 120.0
+margin_bottom = 85.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "wall jump"
+align = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_path = "res://levels/WallJump.tscn"
+
+[node name="GotoCoyoteJump" type="Button" parent="."]
+margin_left = 24.0
+margin_top = 88.0
+margin_right = 120.0
+margin_bottom = 109.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "coyote jump"
+align = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_path = "res://levels/CoyoteJump.tscn"
+[connection signal="pressed" from="GotoBasicJump" to="GotoBasicJump" method="go"]
+[connection signal="pressed" from="GotoDoubleJump" to="GotoDoubleJump" method="go"]
+[connection signal="pressed" from="GotoWallJump" to="GotoWallJump" method="go"]
+[connection signal="pressed" from="GotoCoyoteJump" to="GotoCoyoteJump" method="go"]
